@@ -5,6 +5,12 @@ variable "REGION" {
 variable "ZONE1" {
   default = "us-east-1a"
 }
+variable "ZONE2" {
+  default = "us-east-1b"
+}
+variable "ZONE3" {
+  default = "us-east-1c"
+}
 
 variable "AMIS" {
   type = map(any)
@@ -16,4 +22,16 @@ variable "AMIS" {
 
 variable "USER" {
   default = "ec2-user"
+}
+
+variable "PUB_KEY" {
+  default = "dovekey.pub"
+}
+
+variable "PRIV_KEY" {
+  default = "dovekey"
+}
+
+variable "MYIP" {
+  default = "your-ip-here/32"
 }
